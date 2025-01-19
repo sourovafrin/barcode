@@ -1,0 +1,42 @@
+[
+    {
+        "sku": "PROD001",
+        "name": "Product 1",
+        "weight": "1kg",
+        "price": "$10.00",
+        "expiry": "2025-12-31",
+        "barcode": "123456789012"
+    },
+    {
+        "sku": "PROD002",
+        "name": "Product 2",
+        "weight": "500g",
+        "price": "$5.50",
+        "expiry": "2025-06-30",
+        "barcode": "234567890123"
+    },
+    {
+        "sku": "PROD003",
+        "name": "Product 3",
+        "weight": "2kg",
+        "price": "$20.00",
+        "expiry": "2026-01-15",
+        "barcode": "345678901234"
+    },
+    {
+        "sku": "PROD004",
+        "name": "Product 4",
+        "weight": "750g",
+        "price": "$8.75",
+        "expiry": "2024-11-30",
+        "barcode": "456789012345"
+    },
+    {
+        "sku": "PROD005",
+        "name": "Product 5",
+        "weight": "1.5kg",
+        "price": "$15.00",
+        "expiry": "2025-08-20",
+        "barcode": "567890123456"
+    }
+]
