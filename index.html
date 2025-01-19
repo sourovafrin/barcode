@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barcode Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+    <script>
+        async function fetchProducts() {
+            try {
+                const response = await fetch('products.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                const data = await response.json();
+                document.getElementById('product-data').textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                document.getElementById('product-data').textContent = `Failed to fetch product data: ${error.message}`;
+            }
+        }
+
+        window.onload = fetchProducts;
+    </script>
 </head>
 <body>
-    <h1>Welcome to the Barcode Website</h1>
-    <p>Go to <a href="/barcode-website/barcode.html">Barcode Page</a> to view product data.</p>
+    <h1>Product Barcode Data</h1>
+    <p>The following is the product information fetched from the JSON file:</p>
+    <pre id="product-data">Loading...</pre>
 </body>
 </html>
