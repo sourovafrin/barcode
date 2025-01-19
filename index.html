@@ -8,16 +8,26 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
+            margin: 20px;
         }
         .product {
             border: 1px solid #ddd;
             border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        pre {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
             padding: 10px;
-            margin-bottom: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
         }
         img {
+            margin-top: 10px;
             max-width: 100%;
             height: auto;
+            display: block;
         }
     </style>
     <script>
@@ -32,15 +42,21 @@
                 data.forEach(product => {
                     const productDiv = document.createElement('div');
                     productDiv.className = 'product';
-                    productDiv.innerHTML = `
-                        <h2>${product.name}</h2>
-                        <p><strong>SKU:</strong> ${product.sku}</p>
-                        <p><strong>Weight:</strong> ${product.weight}</p>
-                        <p><strong>Price:</strong> ${product.price}</p>
-                        <p><strong>Expiry:</strong> ${product.expiry}</p>
-                        <p><strong>Barcode:</strong> ${product.barcode}</p>
-                        <img src="${product.barcode_image}" alt="Barcode for ${product.name}">
-                    `;
+                    
+                    // Create the code block
+                    const codeBlock = document.createElement('pre');
+                    const productDetails = { ...product };
+                    delete productDetails.barcode_image; // Exclude image from code block
+                    codeBlock.textContent = JSON.stringify(productDetails, null, 2);
+                    
+                    // Create the image element
+                    const img = document.createElement('img');
+                    img.src = product.barcode_image;
+                    img.alt = `Barcode for ${product.name}`;
+                    
+                    // Append to the product container
+                    productDiv.appendChild(codeBlock);
+                    productDiv.appendChild(img);
                     container.appendChild(productDiv);
                 });
             } catch (error) {
