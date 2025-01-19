@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcode Page</title>
+    <script>
+        async function fetchProducts() {
+            const response = await fetch('products.json');
+            const data = await response.json();
+            document.getElementById('product-data').textContent = JSON.stringify(data, null, 2);
+        }
+
+        window.onload = fetchProducts;
+    </script>
+</head>
+<body>
+    <h1>Product Barcode Data</h1>
+    <pre id="product-data">Loading...</pre>
+</body>
+</html>
