@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barcode Website</title>
+    <title>Product Data with Barcodes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
         }
-        pre {
-            background-color: #f4f4f4;
-            padding: 10px;
+        .product {
             border: 1px solid #ddd;
             border-radius: 5px;
-            overflow-x: auto;
+            padding: 10px;
+            margin-bottom: 15px;
         }
-        h1 {
-            color: #333;
+        img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
     <script>
@@ -28,9 +28,23 @@
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
                 const data = await response.json();
-                document.getElementById('product-data').textContent = JSON.stringify(data, null, 2);
+                const container = document.getElementById('product-container');
+                data.forEach(product => {
+                    const productDiv = document.createElement('div');
+                    productDiv.className = 'product';
+                    productDiv.innerHTML = `
+                        <h2>${product.name}</h2>
+                        <p><strong>SKU:</strong> ${product.sku}</p>
+                        <p><strong>Weight:</strong> ${product.weight}</p>
+                        <p><strong>Price:</strong> ${product.price}</p>
+                        <p><strong>Expiry:</strong> ${product.expiry}</p>
+                        <p><strong>Barcode:</strong> ${product.barcode}</p>
+                        <img src="${product.barcode_image}" alt="Barcode for ${product.name}">
+                    `;
+                    container.appendChild(productDiv);
+                });
             } catch (error) {
-                document.getElementById('product-data').textContent = `Failed to fetch product data: ${error.message}`;
+                document.getElementById('product-container').textContent = `Error: ${error.message}`;
             }
         }
 
@@ -38,8 +52,7 @@
     </script>
 </head>
 <body>
-    <h1>Product Barcode Data</h1>
-    <p>The following is the product information fetched from the JSON file:</p>
-    <pre id="product-data">Loading...</pre>
+    <h1>Product Information with Barcodes</h1>
+    <div id="product-container">Loading...</div>
 </body>
 </html>
