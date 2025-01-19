@@ -1,7 +1,7 @@
 [
     {
-        "sku": "PROD001",
-        "name": "Product 1",
+        "sku": "MAN0843949",
+        "name": "Mango juice",
         "weight": "1kg",
         "price": "$10.00",
         "expiry": "2025-12-31",
@@ -9,8 +9,8 @@
         "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=123456789012&code=EAN13&translate-esc=on"
     },
     {
-        "sku": "PROD002",
-        "name": "Product 2",
+        "sku": "POT4892893",
+        "name": "Potato",
         "weight": "500g",
         "price": "$5.50",
         "expiry": "2025-06-30",
@@ -18,8 +18,8 @@
         "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=234567890123&code=EAN13&translate-esc=on"
     },
     {
-        "sku": "PROD003",
-        "name": "Product 3",
+        "sku": "EGG5879390",
+        "name": "Egg",
         "weight": "2kg",
         "price": "$20.00",
         "expiry": "2026-01-15",
@@ -27,8 +27,8 @@
         "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=345678901234&code=EAN13&translate-esc=on"
     },
     {
-        "sku": "PROD004",
-        "name": "Product 4",
+        "sku": "VEG4282494",
+        "name": "Vegetables",
         "weight": "750g",
         "price": "$8.75",
         "expiry": "2024-11-30",
@@ -36,8 +36,8 @@
         "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=456789012345&code=EAN13&translate-esc=on"
     },
     {
-        "sku": "PROD005",
-        "name": "Product 5",
+        "sku": "CHA4247293",
+        "name": "Chanachur",
         "weight": "1.5kg",
         "price": "$15.00",
         "expiry": "2025-08-20",
