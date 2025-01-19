@@ -5,7 +5,8 @@
         "weight": "1kg",
         "price": "$10.00",
         "expiry": "2025-12-31",
-        "barcode": "123456789012"
+        "barcode": "123456789012",
+        "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=123456789012&code=EAN13&translate-esc=on"
     },
     {
         "sku": "PROD002",
@@ -13,7 +14,8 @@
         "weight": "500g",
         "price": "$5.50",
         "expiry": "2025-06-30",
-        "barcode": "234567890123"
+        "barcode": "234567890123",
+        "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=234567890123&code=EAN13&translate-esc=on"
     },
     {
         "sku": "PROD003",
@@ -21,7 +23,8 @@
         "weight": "2kg",
         "price": "$20.00",
         "expiry": "2026-01-15",
-        "barcode": "345678901234"
+        "barcode": "345678901234",
+        "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=345678901234&code=EAN13&translate-esc=on"
     },
     {
         "sku": "PROD004",
@@ -29,7 +32,8 @@
         "weight": "750g",
         "price": "$8.75",
         "expiry": "2024-11-30",
-        "barcode": "456789012345"
+        "barcode": "456789012345",
+        "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=456789012345&code=EAN13&translate-esc=on"
     },
     {
         "sku": "PROD005",
@@ -37,6 +41,7 @@
         "weight": "1.5kg",
         "price": "$15.00",
         "expiry": "2025-08-20",
-        "barcode": "567890123456"
+        "barcode": "567890123456",
+        "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=567890123456&code=EAN13&translate-esc=on"
     }
 ]
