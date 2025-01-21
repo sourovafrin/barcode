@@ -9,7 +9,7 @@
     "company_address": "Satkhira Sodor Thana, Satkhira",
     "country_of_origin": "Bangladesh",
     "barcode": "8947543545655",
-    "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=894754354565&code=EAN13&translate-esc=on"
+    "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=8947543545655&code=EAN13&translate-esc=on"
   },
   {
     "sku": "HONEY500",
@@ -21,6 +21,18 @@
     "company_address": "Satkhira Sodor Thana, Satkhira",
     "country_of_origin": "Bangladesh",
     "barcode": "8947543545662",
-    "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=894754354566&code=EAN13&translate-esc=on"
+    "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=8947543545662&code=EAN13&translate-esc=on"
+  },
+  {
+    "sku": "HONEY900",
+    "product_name": "Honey",
+    "brand": "Famous",
+    "net_weight": "900 g",
+    "mrp": "Tk 1000",
+    "company_name": "Famous Honey",
+    "company_address": "Satkhira Sodor Thana, Satkhira",
+    "country_of_origin": "Bangladesh",
+    "barcode": "8947543545679",
+    "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=8947543545679&code=EAN13&translate-esc=on"
   }
 ]
