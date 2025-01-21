@@ -1,47 +1,26 @@
 [
-    {
-        "sku": "MAN0843949",
-        "name": "Mango juice",
-        "weight": "1kg",
-        "price": "$10.00",
-        "expiry": "2025-12-31",
-        "barcode": "123456789012",
-        "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=123456789012&code=EAN13&translate-esc=on"
-    },
-    {
-        "sku": "POT4892893",
-        "name": "Potato",
-        "weight": "500g",
-        "price": "$5.50",
-        "expiry": "2025-06-30",
-        "barcode": "234567890123",
-        "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=234567890123&code=EAN13&translate-esc=on"
-    },
-    {
-        "sku": "EGG5879390",
-        "name": "Egg",
-        "weight": "2kg",
-        "price": "$20.00",
-        "expiry": "2026-01-15",
-        "barcode": "345678901234",
-        "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=345678901234&code=EAN13&translate-esc=on"
-    },
-    {
-        "sku": "VEG4282494",
-        "name": "Vegetables",
-        "weight": "750g",
-        "price": "$8.75",
-        "expiry": "2024-11-30",
-        "barcode": "456789012345",
-        "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=456789012345&code=EAN13&translate-esc=on"
-    },
-    {
-        "sku": "CHA4247293",
-        "name": "Chanachur",
-        "weight": "1.5kg",
-        "price": "$15.00",
-        "expiry": "2025-08-20",
-        "barcode": "567890123456",
-        "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=567890123456&code=EAN13&translate-esc=on"
-    }
+  {
+    "sku": "HONEY250",
+    "product_name": "Honey",
+    "brand": "Famous",
+    "net_weight": "250 g",
+    "mrp": "Tk 250",
+    "company_name": "Famous Honey",
+    "company_address": "Satkhira Sodor Thana, Satkhira",
+    "country_of_origin": "Bangladesh",
+    "barcode": "894754354565",
+    "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=894754354565&code=EAN13&translate-esc=on"
+  },
+  {
+    "sku": "HONEY500",
+    "product_name": "Honey",
+    "brand": "Famous",
+    "net_weight": "500 g",
+    "mrp": "Tk 500",
+    "company_name": "Famous Honey",
+    "company_address": "Satkhira Sodor Thana, Satkhira",
+    "country_of_origin": "Bangladesh",
+    "barcode": "894754354566",
+    "barcode_image": "https://barcode.tec-it.com/barcode.ashx?data=894754354566&code=EAN13&translate-esc=on"
+  }
 ]
